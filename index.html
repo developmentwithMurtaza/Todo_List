@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+        }
+        #todo-list {
+            margin-top: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+       
+
+li button {
+    margin-left: 20px;
+    padding: 6px;
+}
+input#todo-input {
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+button{
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    /* row-gap: 20px; */
+    margin-bottom: 12px !important;
+}
+.main-banner{
+    background: white;
+        padding: 50px;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 29px white; */
+    box-shadow: 0 4px 29px #888888;
+
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: circle;
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="main-banner">
+
+    <h1>Todo List</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+</div> <!---main--->
+  
+
+    <script src="app.js"></script>
+
+</body>
+</html>
